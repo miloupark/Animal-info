@@ -13,7 +13,7 @@ function App() {
       </header>
       <Routes>
         <Route path="/" element={<Main />}></Route>
-        <Route path="/detail" element={<Detail />}></Route>
+        <Route path="/detail/:id" element={<Detail />}></Route>
         <Route path="/search" element={<Search />}></Route>
       </Routes>
       <footer>all rights reserved to OZ</footer>
