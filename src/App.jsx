@@ -17,7 +17,10 @@ function App() {
         <h1>💚 동물 조아 💚</h1>
         <input
           value={inputValue}
-          onChange={(event) => setInputValue(event.target.value)}
+          onChange={(event) => {
+            setInputValue(event.target.value);
+            navigate(`/search?animal=${event.target.value}`);
+          }}
         />
         <button onClick={() => navigate(`/search?animal=${inputValue}`)}>
           검색
